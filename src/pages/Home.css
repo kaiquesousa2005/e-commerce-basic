@@ -1,0 +1,149 @@
+.home {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #333;
+}
+
+.loading,
+.error,
+.no-products {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin: 2rem 0;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.no-products {
+  font-style: italic;
+}
+
+.banner {
+  background-color: #000000;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: rgb(230, 230, 230);
+  margin-bottom: 1.5rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d7b912;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #ffe136;
+}
+
+.cta svg {
+  margin-left: 0.5rem;
+}
+
+.featuredProducts,
+.allProducts {
+  margin-bottom: 3rem;
+}
+
+.featuredProducts h2,
+.allProducts h2 {
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.productCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.productCard h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.productCard p {
+  font-size: 1.1rem;
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.addToCart {
+  background-color: #1cec15;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+  background-color: #30b11c;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 2rem 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
