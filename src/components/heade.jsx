@@ -62,7 +62,7 @@ const Header = () => {
             Agendamento
           </Link>
           <Link
-            to="https://api.whatsapp.com/send/?phone=5585987594526&text=Ola%2C+vim+pelo+Google%21&type=phone_number&app_absent=0"
+            to="https://api.whatsapp.com/send/?phone=5585987594526&text=Ola%2C+vim+pelo+site%21&type=phone_number&app_absent=0"
             className="nav-link"
             onClick={toggleMenu}
           >

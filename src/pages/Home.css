@@ -63,6 +63,36 @@
   margin-left: 0.5rem;
 }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-container input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 60%;
+  max-width: 300px;
+}
+
+.search-button {
+  background-color: #d7b912;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #ffe136;
+}
+
 .featuredProducts,
 .allProducts {
   margin-bottom: 3rem;
@@ -146,4 +176,27 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
   }
+
+  .search-container input {
+    width: 70%;
+  }
 }
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+}
+

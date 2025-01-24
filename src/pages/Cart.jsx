@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 import { useCart } from "../context/CartContext"
 import { FaShoppingCart } from "react-icons/fa"
@@ -6,8 +6,6 @@ import "./Cart.css"
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useCart()
-  const [name, setName] = useState("")
-  const [phone, setPhone] = useState("")
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
 
@@ -42,33 +40,16 @@ const Cart = () => {
                     <span>{item.quantity}</span>
                     <button onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>+</button>
                   </div>
-                  <button onClick={() => removeFromCart(item.id)}>Remover</button>
+                  <button className="remove" onClick={() => removeFromCart(item.id)}>
+                    Excluir
+                  </button>
                 </div>
               </div>
             ))}
           </div>
           <div className="cart-summary">
             <h2>Total: R$ {Number.parseFloat(total).toFixed(2)}</h2>
-            <div className="customer-info">
-              <input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} required />
-              <input
-                type="tel"
-                placeholder="Telefone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                required
-              />
-            </div>
-            <Link
-              to="/checkout"
-              className={`checkout-button ${!name || !phone ? "disabled" : ""}`}
-              onClick={(e) => {
-                if (!name || !phone) {
-                  e.preventDefault()
-                  alert("Por favor, preencha seu nome e telefone antes de prosseguir.")
-                }
-              }}
-            >
+            <Link to="/checkout" className="checkout-button">
               Finalizar Compra
             </Link>
           </div>

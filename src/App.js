@@ -18,7 +18,7 @@ function App() {
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route path="/dashboard-x7z9y" element={<Admin />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
             </Routes>
