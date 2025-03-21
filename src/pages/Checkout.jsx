@@ -45,8 +45,8 @@ const Checkout = () => {
         `Olá! Gostaria de finalizar minha compra:\n\n${cart
           .map((item) => `${item.quantity}x ${item.name} - R$ ${(item.price * item.quantity).toFixed(2)}`)
           .join("\n")}\n\nTotal: R$ ${total.toFixed(
-          2,
-        )}\n\nNome: ${formData.fullName}\nTelefone: ${formData.phone}\nEndereço: ${formData.address}, ${formData.city} - ${formData.state}\nCEP: ${formData.zipCode}\nComplemento: ${formData.complement}\nMétodo de Pagamento: ${formData.paymentMethod}`,
+            2,
+          )}\n\nNome: ${formData.fullName}\nTelefone: ${formData.phone}\nEndereço: ${formData.address}, ${formData.city} - ${formData.state}\nCEP: ${formData.zipCode}\nComplemento: ${formData.complement}\nMétodo de Pagamento: ${formData.paymentMethod}`,
       )
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -137,8 +137,8 @@ const Checkout = () => {
             <input
               type="radio"
               name="paymentMethod"
-              value="creditCard"
-              checked={formData.paymentMethod === "creditCard"}
+              value="Credito"
+              checked={formData.paymentMethod === "Credito"}
               onChange={handleInputChange}
             />
             Cartão de Crédito
@@ -147,8 +147,8 @@ const Checkout = () => {
             <input
               type="radio"
               name="paymentMethod"
-              value="debitCard"
-              checked={formData.paymentMethod === "debitCard"}
+              value="Debito"
+              checked={formData.paymentMethod === "Debito"}
               onChange={handleInputChange}
             />
             Cartão de Débito
@@ -157,8 +157,8 @@ const Checkout = () => {
             <input
               type="radio"
               name="paymentMethod"
-              value="pix"
-              checked={formData.paymentMethod === "pix"}
+              value="Pix"
+              checked={formData.paymentMethod === "Pix"}
               onChange={handleInputChange}
             />
             PIX

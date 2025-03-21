@@ -12,8 +12,7 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contato</h3>
-          <p>Telefone: +55(85)987594526</p>
-          <p>Email: contato@firminocabeleleiros.com</p>
+          <p>Telefone: (85)985818139</p>
         </div>
         <div className="footer-section">
           <h3>Redes Sociais</h3>
@@ -33,7 +32,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=5585987594526&text=Ola%2C+vim+pelo+Google%21&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=5585985818139&text=Ola%2C+vim+pelo+Google%21&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 Firmino's Cabeleleiros. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Grupo 10. Todos os direitos reservados.</p>
       </div>
     </footer>
   );

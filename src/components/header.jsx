@@ -24,13 +24,16 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
-          <Link to="https://agendeonline.salonsoft.com.br/firminosunidade3" className="nav-link">
+          <Link to="https://agendeonline.salonsoft.com.br/firminosunidade3" target="_blank"
+            className="nav-link">
             Agendamento
           </Link>
-          <Link to="https://api.whatsapp.com/send/?phone=5585987594526&text=Ola%2C+vim+pelo+Google%21&type=phone_number&app_absent=0" className="nav-link">
+          <Link to="https://api.whatsapp.com/send/?phone=5585985818139&text=Ola%2C+vim+pelo+e-commerce%21&type=phone_number&app_absent=0" target="_blank"
+            className="nav-link">
             Contato
           </Link>
-          <Link to="https://www.google.com.br/maps/place/Firminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia/@-3.7740691,-38.6060222,19z/data=!3m1!4b1!4m14!1m7!3m6!1s0x7c74d5baf5bece3:0x32980bf2adacefde!2sFirminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg!3m5!1s0x7c74d5baf5bece3:0x32980bf2adacefde!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" className="nav-link">
+          <Link to="https://www.google.com.br/maps/place/Firminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia/@-3.7740691,-38.6060222,19z/data=!3m1!4b1!4m14!1m7!3m6!1s0x7c74d5baf5bece3:0x32980bf2adacefde!2sFirminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg!3m5!1s0x7c74d5baf5bece3:0x32980bf2adacefde!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+            className="nav-link">
             Localização
           </Link>
         </nav>
@@ -57,6 +60,7 @@ const Header = () => {
           <Link
             to="https://agendeonline.salonsoft.com.br/firminosunidade3"
             className="nav-link"
+            target="_blank"
             onClick={toggleMenu}
           >
             Agendamento
@@ -64,6 +68,7 @@ const Header = () => {
           <Link
             to="https://api.whatsapp.com/send/?phone=5585987594526&text=Ola%2C+vim+pelo+site%21&type=phone_number&app_absent=0"
             className="nav-link"
+            target="_blank"
             onClick={toggleMenu}
           >
             Contato
@@ -71,6 +76,7 @@ const Header = () => {
           <Link
             to="https://www.google.com.br/maps/place/Firminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia/@-3.7740691,-38.6060222,19z/data=!4m14!1m7!3m6!1s0x7c74d5baf5bece3:0x32980bf2adacefde!2sFirminos+Cabeleireiros+-+Unidade+3+%7C+Sal%C3%A3o+de+beleza+no+conjunto+cear%C3%A1+e+Barbearia!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg!3m5!1s0x7c74d5baf5bece3:0x32980bf2adacefde!8m2!3d-3.7740704!4d-38.6053785!16s%2Fg%2F11y3hry8tg?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"
             className="nav-link"
+            target="_blank"
             onClick={toggleMenu}
           >
             Localização
